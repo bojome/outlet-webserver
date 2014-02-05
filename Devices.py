@@ -27,11 +27,11 @@ class Device:
         return (self.device == other.device) and (self.family == other.family)
 
     def enable(self):
-        return subprocess.check_output(["script", self.family, self.device, "1"])
+        return subprocess.check_output(["sudo", "./send", self.family, self.device, "1"])
 
 
     def disable(self):
-        return subprocess.check_output(["script", self.family, self.device, "0"])
+        return subprocess.check_output(["sudo", "./send", self.family, self.device, "0"])
 
 
 class DeviceManager:
