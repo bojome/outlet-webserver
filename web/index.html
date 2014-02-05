@@ -214,8 +214,10 @@
 		// handle the table-button events
 		$("table").on('click', 'button', function(event) {
 			if (event.toElement.id != "") {
-			    var el = event.target ? event.target : event.toElement;
+			    var el = event.relatedTarger || event.toElement;
+			    console.log(el);
 				var elementid = el.id;
+			    console.log(elementid);
 				if ((elementid.indexOf("ON") !== -1) || (elementid.indexOf("OFF") !== -1)) {
 					var elementsplit = elementid.split("_");
 					$.getJSON("/?switchDevice&housecode=" + elementsplit[1] + "&devicecode=" + elementsplit[2] 
