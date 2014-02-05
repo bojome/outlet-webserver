@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootswatch: Slate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./bootstrap.css" media="screen">
+    <link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/bootswatch.min.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="./bower_components/bootstrap/assets/js/html5shiv.js"></script>
+      <script src="./bower_components/bootstrap/assets/js/respond.min.js"></script>
+    <![endif]-->
+	
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="" class="navbar-brand">Device-Manager</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#outlets">Outlets</a>
+            </li>
+            <li>
+              <a href="#new-outlets">New outlets</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+
+      <!-- Tables
+      ================================================== -->
+      <div class="bs-docs-section">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1 id="tables">Outlets</h1>
+            </div>
+
+            <div class="bs-example" id="outlets">
+              <table class="table table-striped table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th width="5%">#</th>
+                    <th width="10%">Housecode</th>
+                    <th width="10%">Devicecode</th>
+                    <th>Description</th>
+					<th width="10%">Activate</th>
+                  </tr>
+                </thead>
+                <tbody id="outletOverview">
+                  
+                </tbody>
+              </table>
+            </div><!-- /example -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Forms
+      ================================================== -->
+      <div class="bs-docs-section">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="pa
+			ge-header">
+              <h1 id="forms">Add outlet</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="new-outlets">
+          <div class="col-lg-6">
+            <div class="well">
+              <div class="bs-example form-horizontal">
+                <fieldset>
+                  <div class="form-group" id="divParentHouseCode">
+                    <label for="inputHouseCode" class="col-lg-2 control-label">House-Code:</label>
+                    <div class="col-lg-9 col-lg-offset-1">
+                      <input type="text" class="form-control" id="inputHouseCode" placeholder="Hauscode">
+                    </div>
+                  </div>
+                  <div class="form-group" id="divParentDeviceCode">
+                    <label for="inputDevicecode" class="col-lg-2 control-label">Device-Code:</label>
+                    <div class="col-lg-9 col-lg-offset-1">
+                      <input type="text" class="form-control" id="inputDevicecode" placeholder="Devicecode">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputDescription" class="col-lg-2 control-label">Description:</label>
+                    <div class="col-lg-9 col-lg-offset-1">
+                      <input type="text" class="form-control" id="inputDescription" placeholder="Description">
+                    </div>
+                  </div>
+				  <div class="form-group">
+                    <label class="col-lg-2 control-label">Current status</label>
+                    <div class="col-lg-9 col-lg-offset-1">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                          On
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                          Off
+                        </label>
+                      </div>
+                    </div>
+				  </div>
+                  <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                      <button class="btn btn-default" id="cancelOutlet">Cancel</button> 
+                      <button type="submit" class="btn btn-primary" id="submitOutlet">Submit</button> 
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+
+
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+            
+            <ul class="list-unstyled">
+              <li class="pull-right"><a href="#top">Back to top</a></li>
+              <li><a href="http://news.bootswatch.com" onclick="pageTracker._link(this.href); return false;">Blog</a></li>
+              <li><a href="http://feeds.feedburner.com/bootswatch">RSS</a></li>
+              <li><a href="https://twitter.com/thomashpark">Twitter</a></li>
+              <li><a href="https://github.com/thomaspark/bootswatch/">GitHub</a></li>
+              <li><a href="../help/#api">API</a></li>
+              <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=F22JEM3Q78JC2">Donate</a></li>
+            </ul>
+            <p>Made by <a href="http://thomaspark.me">Thomas Park</a>. Contact him at <a href="mailto:hello@thomaspark.me">hello@thomaspark.me</a>.</p>
+            <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.</p>
+            <p>Based on <a href="http://getbootstrap.com">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts">Google</a>. Favicon by <a href="https://twitter.com/geraldhiller">Gerald Hiller</a>.</p>
+
+          </div>
+        </div>
+        
+      </footer>
+    
+
+    </div>
+
+
+    <script src="./bower_components/jquery/jquery.min.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bootswatch.js"></script>
+	<script type="text/javascript">
+		function getOutletRowSkeleton() {
+			return "<tr ROWCLASS><td>ID</td><td>HOUSECODE</td><td>DEVICECODE</td><td>DESCRIPTION</td><td><button type=\"button\" class=\"btn btn-success\" BUTTONON>On</button><button type=\"button\" class=\"btn btn-danger\" BUTTONOFF>Off</button></tr>";
+		}
+		
+		function isValidHouseCode(val) {
+			return /^[0-1]+$/.test(val) && (val.length <= 5);
+		}
+		
+		function isValidDeviceCode(val) {
+			return /^\d$/.test(val);
+		}
+		
+		function resetForm() {
+			$("#inputHouseCode").val('');
+			$("#inputDevicecode").val('');
+			$("#inputDescription").val('');
+			$("#divParentDeviceCode").removeClass("has-error");
+			$("#divParentHouseCode").removeClass("has-error");
+			$("#optionsRadios1").prop("checked", true);
+		}
+		
+		function outletOverview() {
+			$.getJSON("/?statusDevices", function(data) {
+				$("#outletOverview").html("");
+				for (var i = 0; i < data.length; i++) {
+					var row = getOutletRowSkeleton();
+					if ((data[i][3] == 1) || (data[i][3] == 0)) {
+						row = row.replace("ROWCLASS", "class=" + ((data[i][3] == 1)? "success" : "danger"));
+					} else {
+						row = row.replace("ROWCLASS", "");
+					}
+					row = row.replace("ID", (i+1));
+					row = row.replace("HOUSECODE", data[i][0]);
+					row = row.replace("DEVICECODE", data[i][1]);
+					row = row.replace("DESCRIPTION", data[i][2]);
+					row = row.replace("BUTTONON", "id=\"ON_" + data[i][0] + "_" + data[i][1] + "\"");
+					row = row.replace("BUTTONOFF", "id=\"OFF_"  + data[i][0] + "_" + data[i][1] + "\"");
+					$("#outletOverview").append(row);
+				}
+			});
+		}
+		
+		// handle the table-button events
+		$("table").on('click', 'button', function(event) {
+			if (event.toElement.id != "") {
+				var elementid = event.toElement.id;
+				if ((elementid.indexOf("ON") !== -1) || (elementid.indexOf("OFF") !== -1)) {
+					var elementsplit = elementid.split("_");
+					$.getJSON("/?switchDevice&housecode=" + elementsplit[1] + "&devicecode=" + elementsplit[2] 
+											+ "&status=" + (elementsplit[0] == "ON"), function(data) {
+						if (data == "OK") {
+							outletOverview();
+						} else {
+							alert("Error: " + data);
+						}
+					});
+				}
+			}
+		});
+		
+		function validateForm() {
+			var error = false;
+			var housecode = $("#inputHouseCode").val();
+			var devicecode = $("#inputDevicecode").val();
+			if (isValidHouseCode(housecode) === false) {
+				$("#divParentHouseCode").addClass("has-error");
+				error = true;
+			} else {
+				$("#divParentHouseCode").removeClass("has-error");
+			}
+			if (isValidDeviceCode(devicecode) === false) {
+				$("#divParentDeviceCode").addClass("has-error");
+				error = true;
+			} else {
+				$("#divParentDeviceCode").removeClass("has-error");
+			}
+			return error;
+		}
+		
+		$("#submitOutlet").click(function() {
+			var housecode = $("#inputHouseCode").val();
+			var devicecode = $("#inputDevicecode").val();
+			var description = $("#inputDescription").val();
+			var status = $("#optionsRadios1").is(':checked');
+			
+			status = (status == true ? "1" : "0");
+			
+			
+			var error = validateForm();
+			
+			if (error) {
+				return;
+			}
+			
+			// handle a python "bug", which drops empty attributes
+			if (description == "") {
+				description = " ";
+			}
+		
+			$.getJSON("/?addDevice&housecode=" + housecode + 
+							"&devicecode=" + devicecode + "&description=" + description +
+							"&status=" + status, function(data) {
+					if (data == "OK") {
+						resetForm();
+						outletOverview();
+					} else {
+						console.log("Error: " + data);
+					}
+				});
+				
+		});
+		
+		$("#new-outlets").on('keyup', 'input', validateForm);
+		
+		$("#cancelOutlet").click(resetForm);
+		
+		$("body").ready(initialize);
+		
+		function initialize() {
+			outletOverview();
+		}
+	</script>
+  </body>
+</html>
