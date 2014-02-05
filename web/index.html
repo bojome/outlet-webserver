@@ -214,7 +214,7 @@
 		// handle the table-button events
 		$("table").on('click', 'button', function(event) {
 			if (event.toElement.id != "") {
-			    var el = event.relatedTarger || event.toElement;
+			    var el = event.relatedTarget || event.toElement;
 			    console.log(el);
 				var elementid = el.id;
 			    console.log(elementid);
